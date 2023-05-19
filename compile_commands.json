@@ -1,0 +1,44 @@
+[
+ {
+  "directory": "C:/msys64/home/25tirupathir/physim",
+  "arguments": [
+   "g++",
+   "-o",
+   "obj/main.o",
+   "-c",
+   "src/main.cpp",
+   "-g",
+   "-ggdb",
+   "-Iinclude",
+   "-Wall",
+   "-IC:/msys64/mingw64/include/freetype2",
+   "-IC:/msys64/mingw64/include/libpng16",
+   "-IC:/msys64/mingw64/include/harfbuzz",
+   "-IC:/msys64/mingw64/include/glib-2.0",
+   "-IC:/msys64/mingw64/lib/glib-2.0/include",
+   "-IC:/msys64/mingw64/include/AL"
+  ],
+  "file": "src/main.cpp"
+ },
+ {
+  "directory": "C:/msys64/home/25tirupathir/physim",
+  "arguments": [
+   "g++",
+   "-o",
+   "obj/Physical.o",
+   "-c",
+   "src/Physical.cpp",
+   "-g",
+   "-ggdb",
+   "-Iinclude",
+   "-Wall",
+   "-IC:/msys64/mingw64/include/freetype2",
+   "-IC:/msys64/mingw64/include/libpng16",
+   "-IC:/msys64/mingw64/include/harfbuzz",
+   "-IC:/msys64/mingw64/include/glib-2.0",
+   "-IC:/msys64/mingw64/lib/glib-2.0/include",
+   "-IC:/msys64/mingw64/include/AL"
+  ],
+  "file": "src/Physical.cpp"
+ }
+]
