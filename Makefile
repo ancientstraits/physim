@@ -1,7 +1,13 @@
-LIBS = sfml-all
+LIBS = sfml-graphics sfml-system sfml-window
 
-CFLAGS = -g -ggdb -Iinclude -Wall $(shell pkg-config --cflags $(LIBS))
+OS = $(shell uname)
+
+CFLAGS = -std=c++11 -g -ggdb -Iinclude -Wall $(shell pkg-config --cflags $(LIBS))
 LFLAGS = $(shell pkg-config --libs $(LIBS)) -lm
+ifeq ($(OS),Darwin)
+	CFLAGS += -DGL_SILENCE_DEPRECATION
+	LFLAGS += -framework OpenGL
+endif
 
 OBJS := $(patsubst  src/%.cpp, obj/%.o, $(wildcard src/*.cpp))
 DEPS := $(wildcard include/*.hpp)
